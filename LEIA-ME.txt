@@ -1,0 +1,7 @@
+Coloque nesta pasta suas imagens: logo, capas dos cursos, foto do professor etc.
+
+Para usar uma imagem no site, referencie assim:
+  assets/nome-da-imagem.png
+
+Exemplo no HTML:
+  <img src="assets/logo.png" alt="Minha logo">
