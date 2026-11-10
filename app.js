@@ -37,7 +37,7 @@ function renderCourses(){
   grid.innerHTML = list.map(c=>{
     const total = courseLessons(c), d = courseDone(c), pct = total ? Math.round(d/total*100) : 0;
     return `<article class="course-card">
-      <div class="thumb ${c.thumb}">${c.icon}<span class="badge">${c.categoryLabel}</span><span class="level">${c.level} · ⭐ ${c.rating}</span></div>
+      <div class="thumb ${c.thumb}"><span class="thumb-icon">${c.icon}</span><span class="badge">${c.categoryLabel}</span><span class="level">${c.level} · ⭐ ${c.rating}</span></div>
       <div class="card-body">
         <h3>${c.title}</h3><p>${c.description}</p>
         <div class="meta"><span>🎬 ${total} aulas</span><span>🧩 ${c.modules.length} módulos</span><span>📜 Certificado</span></div>
